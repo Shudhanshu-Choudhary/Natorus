@@ -1,0 +1,14 @@
+{
+  "name": "nature",
+  "version": "1.0.0",
+  "description": "learning css",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Shudhanshu",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
