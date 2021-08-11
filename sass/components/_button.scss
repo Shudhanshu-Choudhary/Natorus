@@ -1,5 +1,5 @@
 .btn {
-    
+    &,
     &:link,
     &:visited {
         text-decoration: none;
@@ -10,6 +10,10 @@
         border-radius: 10rem;
         transition: all 0.2s;
         position: relative;
+
+        // Changes for <button> tag
+        border-style: none;
+        cursor: pointer;
     }
 
     &:hover {
