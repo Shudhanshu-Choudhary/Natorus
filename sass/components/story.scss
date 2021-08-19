@@ -9,6 +9,18 @@
     font-size: $default-font-size;
     transform: skewX(-12deg);
 
+    @include forSize(tab-port) {
+        padding: 4rem;
+        padding-left: 7rem;
+        width: 100%;
+        transform: skewX(0);
+    }
+
+    @include forSize(phone) {
+        transform: skewX(0);
+    }
+
+
     & > * {
         transform: skewX(12deg);
     }
@@ -23,6 +35,20 @@
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
         position: relative;
+
+        @include forSize(tab-port) {
+            transform: translateX(-3rem) skewX(0);
+        }
+
+        @include forSize(tab-port) {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        @include forSize(phone){
+           width: 9rem;
+           height: 9rem;
+        }
     }
 
     &__img {
@@ -33,6 +59,10 @@
 
     &__text {
         transform: skewX(12deg);
+        
+        @include forSize(tab-port) {
+            transform: skewX(0);
+        }
     }
     
     &__caption {

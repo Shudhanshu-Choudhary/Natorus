@@ -1,9 +1,20 @@
 .row {
-   max-width: $grid-width;
+   max-width: $grid-width; 
    margin: 0 auto;
    &:not(:last-child) {
        margin-bottom: $gutter-vertical;
+
+       @include forSize(tab-port) {
+        margin-bottom: $gutter-vertical-small;
+      }
+
    }
+
+   @include forSize(tab-port) {
+     max-width: 50rem;
+     padding: 0 3rem;
+  }
+
 
    @include clearfix;
 
@@ -14,6 +25,19 @@
         margin-right: $gutter-horizontal;
     } 
     float: left;
+
+    @include forSize(tab-port) {
+        width: 100% !important; 
+    }
+
+    @include forSize(tab-port) {
+        margin-right: 0; 
+    }
+
+    @include forSize(tab-port) {
+        margin-bottom: $gutter-vertical-small;
+      }
+
    }
   // DECLARING THE WIDTH OF THE COLUMN 
    .col-1-of-2 {
