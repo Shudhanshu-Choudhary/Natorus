@@ -24,17 +24,29 @@
        display: table;
        overflow: hidden;
        transition: all .5s .2s;  
+
+       @include forSize(phone) {
+           width: 98%;
+       }
     }
 
     &__left {
       width: 33.3333%;
       display: table-cell;
       vertical-align: middle;
+
+      @include forSize(tab-port) {
+          width: 40%;
+      }
     }
 
     &__img {
         width: 100%;
         display: block;
+
+        @include forSize(phone) {
+            margin-bottom: 5rem;
+        }
     }
 
     &__right {
@@ -43,6 +55,15 @@
        vertical-align: middle;
        //text-align: center;
        padding: 3rem 5rem;
+
+       @include forSize(tab-port) {
+          width: 60%;
+          padding: 3rem 3rem;
+       }
+
+       @include forSize(phone) {
+          padding: 1rem 1.5rem; 
+       }
     }
 
     //open state
@@ -67,6 +88,11 @@
             display: inline-block;
             transition: all .2s;
             line-height: 1;
+
+            @include forSize(phone) {
+                top: 2.5rem;
+                left: 2.5rem;
+            }
        }
        &:hover {
            color: $color-dark-green;
@@ -84,5 +110,9 @@
       -ms-hyphens: auto;
       -webkit-hyphens: auto;
       hyphens: auto;
+
+      @include forSize(tab-port) {
+          column-count: 1;
+      }
     }
 }
