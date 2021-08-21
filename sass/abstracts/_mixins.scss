@@ -26,16 +26,16 @@ $breakpoint argument choice
 
 @mixin forSize($size) {
       @if $size == phone {
-        @media (max-width: 37.5em) { @content}; //600px
+        @media only screen and (max-width: 37.5em) { @content}; //600px
       }
 
       @if $size == tab-port {
-          @media (max-width: 56.25em) {@content};  //900px
+          @media only screen and (max-width: 56.25em) {@content};  //900px
       }
       @if $size == tab-land {
-          @media (max-width: 62.5em) {@content};  //1000px
+          @media only screen and (max-width: 62.5em) {@content};  //1000px
       }
       @if $size == big-desktop { 
-          @media (min-width: 75em) {@content};  //1200px
+          @media only screen and (min-width: 75em) {@content};  //1200px
       }
 }

@@ -32,3 +32,8 @@ body {
     }
 }
 
+::selection {
+    background-color: $color-dark-green;
+    color: $color-white;
+}
+
