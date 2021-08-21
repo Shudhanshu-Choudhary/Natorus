@@ -14,6 +14,7 @@
         // after ptting absolute the height collapse so to fix that we also have to put the same height to card
         height: 52rem;
         width: 100%;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         transition: all .8s ease;
         border-radius: 3px;

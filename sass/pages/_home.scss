@@ -12,10 +12,10 @@
 .section-feature {
     padding: 20rem 0; 
     background-image: linear-gradient(
-        to right bottom ,
-        rgba($color-light-green, 0.8) , 
-        rgba($color-medium-green, 0.8)) ,
-    url(../img/nat-4.jpg);
+                        to right bottom ,
+                        rgba($color-light-green, 0.8) , 
+                        rgba($color-medium-green, 0.8)) ,
+                        url(../img/nat-4.jpg);
 
     background-size: cover;
     transform: skewY(-7deg);
@@ -28,6 +28,10 @@
     @include forSize(tab-port) {
         padding: 15rem 0;
       }
+
+    @include forSize(tab-land) {
+        padding: 15rem 2rem;
+    }
 }
 
 .section-tour {
