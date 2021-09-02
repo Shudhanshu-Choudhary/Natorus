@@ -681,7 +681,16 @@ body {
     hyphens: auto; }
     @media only screen and (max-width: 56.25em) {
       .popup__text {
-        column-count: 1; } }
+        column-count: 1; }
+        .popup__text-hide {
+          display: none; } }
+    @media only screen and (max-width: 37.5em) {
+      .popup__text {
+        column-count: 1;
+        margin-bottom: 2rem; }
+        .popup__text-hide {
+          display: none;
+          visibility: hidden; } }
 
 .header {
   height: 85vh;

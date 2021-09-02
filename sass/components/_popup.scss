@@ -113,6 +113,19 @@
 
       @include forSize(tab-port) {
           column-count: 1;
+          &-hide {
+            display: none;
+        }
       }
-    }
+
+      @include forSize(phone) {
+          column-count: 1;
+          &-hide {
+              display: none;
+              visibility: hidden;
+          }
+          margin-bottom: 2rem;
+      }
+
+   }
 }
